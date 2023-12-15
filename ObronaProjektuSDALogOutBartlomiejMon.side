@@ -1,0 +1,121 @@
+{
+  "id": "e57c1846-8905-4ac2-8dbf-8cc36034ec84",
+  "version": "2.0",
+  "name": "ObronaProjektuSDALogOutBartlomiejMon",
+  "url": "https://www.openlang.ai",
+  "tests": [{
+    "id": "16a93a21-a204-4a3c-b746-f7bcc6055945",
+    "name": "ObronaProjektuSDALogOutBartlomiejMon",
+    "commands": [{
+      "id": "2db4496f-373f-4bc0-a773-317f911479d7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ada88f5-7cc2-46ae-88e8-da2f8c752761",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "3456x1408",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3f19f2ac-e812-4710-a83e-c4c832b6b74c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Languages",
+      "targets": [
+        ["linkText=Languages", "linkText"],
+        ["css=.transition-colors:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Languages')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/#languages')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Languages')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c60d9d0-3bfd-436f-bfd9-70e6b3b807a8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Pricing",
+      "targets": [
+        ["linkText=Pricing", "linkText"],
+        ["css=.transition-colors:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Pricing')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/#pricing')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Pricing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb01e8ee-09e7-4646-8333-0cde86bd52fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-5xl > span",
+      "targets": [
+        ["css=.text-5xl > span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'OpenLang.ai')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3852659-a21e-44b0-a2aa-e9a898aefeca",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Start Learning for Free",
+      "targets": [
+        ["linkText=Start Learning for Free", "linkText"],
+        ["css=.ml-auto > .inline-flex", "css:finder"],
+        ["xpath=//a[contains(text(),'Start Learning for Free')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/signup')]", "xpath:href"],
+        ["xpath=//section/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Start Learning for Free  ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "11e647c1-3e58-4028-8f90-f8889d0cf489",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-secondary-foreground",
+      "targets": [
+        ["css=.text-secondary-foreground", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "651f1307-7dc4-48cc-b2a6-b247c36cabd2",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d74cd3bf-a0b0-4537-a3a2-ad519520dab7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flex-col",
+      "targets": [
+        ["css=.flex-col", "css:finder"],
+        ["xpath=//div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "dc111b56-d300-4e6d-af08-36d8c1b1f880",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["16a93a21-a204-4a3c-b746-f7bcc6055945"]
+  }],
+  "urls": ["https://www.openlang.ai/"],
+  "plugins": []
+}

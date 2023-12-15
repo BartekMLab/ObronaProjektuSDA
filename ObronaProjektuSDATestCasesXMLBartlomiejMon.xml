@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Test Cases</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C14</id>
+				<title>WyświetlanieZakładkiImportedPodcasts</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Użytkownik zalogowany z podstawowymi prawami API LANGAI: 
+
+Login: obronapracybartek@gmail.com      hasło: kod numeryczny wysłany na konto email. 
+
+
+Serwis uruchomiony na komputerze typu desktop. 
+</preconds>
+									</custom>
+							</case>
+								</cases>
+								<sections>
+		<section>
+		<name>MenuGornePodcastVideos</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C1</id>
+				<title>PrawidloweDzialaniePodcasts</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Użytkownik zalogowany z podstawowymi prawami API LANGAI: 
+
+Login: obronapracybartek@gmail.com      hasło: kod numeryczny wysłany na konto email. 
+
+
+Serwis uruchomiony na komputerze typu desktop. 
+
+
+ </preconds>
+										<steps_separated><step>
+<index>1</index><content>Uruchom stronę: https://www.openlang.ai/overview 
+Zaloguj się na konto użytkownika. </content><expected>Serwis powinien otworzyc menu glowne - podzielone na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported. </expected></step>
+<step>
+<index>2</index><content>Wybierz w lewym g&amp;oacute;rnym rogu opcje &amp;ldquo;Podcasts&amp;rdquo;. </content><expected>Pointer powinien się zmienić na buttonowy.</expected></step>
+<step>
+<index>3</index><content>Kliknij w przycisk &quot;Podcasts&quot;.</content><expected>Zostajemy przeniesieni do podstrony Podcast. Powinny znaleźć się tam dwie sekcje: Imported oraz Trending</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C13</id>
+				<title>WyświetlanieZakladkiEmptyStatePodcasts</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Użytkownik zalogowany z podstawowymi prawami API LANGAI: 
+
+Login: obronapracybartek@gmail.com      hasło: kod numeryczny wysłany na konto email. 
+
+(Nowe konto użytkownika)
+Serwis uruchomiony na komputerze typu desktop. 
+
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Zaloguj się na konto użytkownika.</content><expected>Serwis powinien otworzyc menu glowne - podzielone na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported.
+</expected></step>
+<step>
+<index>2</index><content>Kliknij w przycisk &quot;Podcasts&quot;.
+</content><expected>Zostajemy przeniesieni do podstrony Podcast. Powinny znaleźć się tam dwie sekcje: Imported oraz Trending
+</expected></step>
+<step>
+<index>3</index><content>Kliknij w przycisk &quot;Podcasts&quot;.</content><expected>Zostajemy przeniesieni do podstrony Podcast. Powinny znaleźć się tam dwie sekcje: Imported oraz Trending. W przypadku kiedy konto jest nowe w zakładce import wyświetla się ikonka zapytajnika oraz informacja: &quot;No imported content yet&quot;.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C12</id>
+				<title>WyświetlanieZakładkiTrendingPodcasts</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Użytkownik zalogowany z podstawowymi prawami API LANGAI: 
+
+Login: obronapracybartek@gmail.com      hasło: kod numeryczny wysłany na konto email. 
+
+
+Serwis uruchomiony na komputerze typu desktop. 
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Uruchom stronę: https://www.openlang.ai/overview
+Zaloguj się na konto użytkownika.</content><expected>Serwis powinien otworzyc menu glowne - podzielone na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported.
+</expected></step>
+<step>
+<index>2</index><content>Wybierz sekcje Podcast- zamieszczona w lewym g&amp;oacute;rnym rogu.</content><expected>Serwis powinien przenieść Cię do wybranej opcji. W podsekcji trending powinny wyświetlać się kafelki z najpopularniejszymi podcastami. 
+
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C29</id>
+				<title>DziałanieprzyciskuImportWZakładcePodcast</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Użytkownik zalogowany z podstawowymi prawami API LANGAI: 
+
+Login: obronapracybartek@gmail.com      hasło: kod numeryczny wysłany na konto email. 
+
+Serwis uruchomiony na komputerze typu desktop. 
+
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Uruchom stronę: https://www.openlang.ai/overview
+Zaloguj się na konto użytkownika.</content><expected>Serwis powinien otworzyc menu glowne - podzielone na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported.
+</expected></step>
+<step>
+<index>2</index><content>Kliknij w przycisk &quot;Podcasts&quot;.
+
+</content><expected>Zostajemy przeniesieni do podstrony Podcast. Powinny znaleźć się tam dwie sekcje: Imported oraz Trending
+</expected></step>
+<step>
+<index>3</index><content>Wybierz przycisk &quot;Import&quot; w prawym g&amp;oacute;rnym rogu.</content><expected>Serwis powinien przenieść Cię do wyszukiwarki. </expected></step>
+<step>
+<index>4</index><content>Wpisz w wyszukiwarkę hasło: english. </content><expected>Serwis powinien zasugerować podcasty dotyczące języka angielskiego. </expected></step>
+<step>
+<index>5</index><content>Kliknij w pierwszy kafelek z lewej. </content><expected>Powinna otworzyć się strona z nagraniami wybranego autora. </expected></step>
+<step>
+<index>6</index><content>Kliknij przycisk import w prawym g&amp;oacute;rnym rogu, a następnie ponownie wybierz zakładkę podcast z gł&amp;oacute;wnego menu. </content><expected>Wybrana publikacja powinna zostać dodana jako kafelek do zakładki &quot;imported&quot;.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C2</id>
+				<title>PrawidloweDzialanieVideos</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Użytkownik zalogowany z podstawowymi prawami API LANGAI: 
+
+Login: obronapracybartek@gmail.com      hasło: kod numeryczny wysłany na konto email. 
+
+
+Serwis uruchomiony na komputerze typu desktop. 
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Uruchom stronę: https://www.openlang.ai/overview. Zaloguj się na konto użytkownika. </content><expected>Serwis powinien otworzyc menu glowne - podzielonye na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported.
+</expected></step>
+<step>
+<index>2</index><content>Wybierz w lewym g&amp;oacute;rnym rogu opcje &amp;ldquo;Videos&amp;rdquo;.</content><expected> Pointer powinien się zmienić  na na buttonowy.</expected></step>
+<step>
+<index>3</index><content>Kliknij w przycisk &quot;Videos&quot;. </content><expected>Otwiera się link &amp;ldquo;Videos&amp;rdquo;. Zostajemy przeniesieni do podstrony Podcast. Powinny znaleźć się tam dwie sekcje. Imported oraz Trening. 
+
+ </expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C9</id>
+				<title>WyświetlenieEmptyStateVideos</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Użytkownik zalogowany z podstawowymi prawami API LANGAI: 
+
+Login: obronapracybartek@gmail.com      hasło: kod numeryczny wysłany na konto email. 
+
+
+Serwis uruchomiony na komputerze typu desktop. 
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Zaznacz ikonę Video ze strony gł&amp;oacute;wnej. </content><expected>Kursor powinien się zmienić na pointer. </expected></step>
+<step>
+<index>2</index><content>Kliknij w ikonę Video. </content><expected>Strona powinna powinna się zmienić na zakładkę video.
+System wyświetla komunikat: &quot;No imported channels yet&quot; z dodatkową czarną ikoną w prawym g&amp;oacute;rnym rogu &quot;import&quot;. </expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C10</id>
+				<title>WyświetlanieZakladkiTrendingVideo</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Użytkownik zalogowany z podstawowymi prawami API LANGAI: 
+
+Login: obronapracybartek@gmail.com      hasło: kod numeryczny wysłany na konto email. 
+
+
+Serwis uruchomiony na komputerze typu desktop. 
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Uruchom stronę: https://www.openlang.ai/overview
+Zaloguj się na konto użytkownika.
+</content><expected>Serwis powinien otworzyc menu glowne - podzielone na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported.
+</expected></step>
+<step>
+<index>2</index><content>Wybierz sekcje Video- zamieszczona w lewym g&amp;oacute;rnym rogu.
+</content><expected>Serwis powinien przenieść Cię do wybranej opcji. W podsekcji trending powinny wyświetlać się kafelki z najpopularniejszymi kanałami Youtube.. 
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C28</id>
+				<title>DziałaniePrzyciskuImportWZakładceVideo</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Użytkownik zalogowany z podstawowymi prawami API LANGAI: 
+
+Login: obronapracybartek@gmail.com      hasło: kod numeryczny wysłany na konto email. 
+
+
+Serwis uruchomiony na komputerze typu desktop. 
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Uruchom stronę: https://www.openlang.ai/overview
+Zaloguj się na konto użytkownika.</content><expected>Serwis powinien otworzyc menu glowne - podzielone na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported.
+
+</expected></step>
+<step>
+<index>2</index><content>Kliknij w przycisk &quot;Videos&quot;.
+
+</content><expected>Zostajemy przeniesieni do podstrony Video. Powinny znaleźć się tam dwie sekcje: Imported oraz Trending
+
+</expected></step>
+<step>
+<index>3</index><content>Wybierz przycisk &quot;Import&quot; w prawym g&amp;oacute;rnym rogu.</content><expected>Serwis powinien przenieść Cię do wyszukiwarki.
+
+</expected></step>
+<step>
+<index>4</index><content>Wpisz w wyszukiwarkę hasło: Wpisz w wyszukiwarkę hasło: @RandomMakingMovies
+
+
+
+</content><expected>Serwis powinien zasugerować filmy wideo wybranego tw&amp;oacute;rcy. 
+
+</expected></step>
+<step>
+<index>5</index><content>Kliknij przycisk import w prawym g&amp;oacute;rnym rogu.</content><expected>Wybrany autor powinien zostać dodany jako kafelek do zakładki &quot;imported&quot; w części VIDEOS. Wcześniej powinna pojawić się informacja o wykonaniu trankrypcji. 
+
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>MenuGorneSettingsJezyki</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C4</id>
+				<title>PrawidloweDzialanieSettings</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Użytkownik zalogowany z podstawowymi prawami API LANGAI: 
+
+Login: obronapracybartek@gmail.com      hasło: kod numeryczny wysłany na konto email. 
+
+
+Serwis uruchomiony na komputerze typu desktop. 
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Uruchom stronę: https://www.openlang.ai/overview
+Zaloguj się na konto użytkownika.</content><expected>Serwis powinien otworzyc menu glowne - podzielone na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported.</expected></step>
+<step>
+<index>2</index><content>Wybierz sekcje settings - zamieszczona w prawym g&amp;oacute;rnym rogu. Z pierwszą literą Twojego inicjału. </content><expected>Menu rozwija się. Widoczne są trzy podsekcje: Overview, Account, Getting Started, Log Out, </expected></step>
+<step>
+<index>3</index><content>Wybierz jedną z sekcji - klikając. </content><expected>Serwis powinien przenieść Cię do wybranej opcji. </expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C20</id>
+				<title>PrawidłoweDziałaniePodsekcjiOverview.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Użytkownik zalogowany z podstawowymi prawami API LANGAI: 
+
+Login: obronapracybartek@gmail.com      hasło: kod numeryczny wysłany na konto email. 
+
+
+Serwis uruchomiony na komputerze typu desktop. 
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Uruchom stronę: https://www.openlang.ai/overview
+Zaloguj się na konto użytkownika.
+</content><expected>Serwis powinien otworzyc menu glowne - podzielone na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported.
+</expected></step>
+<step>
+<index>2</index><content>Wybierz sekcje settings - zamieszczona w prawym g&amp;oacute;rnym rogu. Z pierwszą literą Twojego inicjału.
+</content><expected>Menu rozwija się. Widoczne są trzy podsekcje: Overview, Account, Getting Started, Log Out,
+</expected></step>
+<step>
+<index>3</index><content>Wybierz sekcje Overview
+</content><expected>Serwis powinien przenieść Cię do wybranej opcji. Jeśli jesteś aktualnie w menu gł&amp;oacute;wnym to strona pozostanie bez zmian. 
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C21</id>
+				<title>PrawidłoweDziałaniePodsekcjiAccount.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Użytkownik zalogowany z podstawowymi prawami API LANGAI: 
+
+Login: obronapracybartek@gmail.com      hasło: kod numeryczny wysłany na konto email. 
+
+
+Serwis uruchomiony na komputerze typu desktop. 
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Uruchom stronę: https://www.openlang.ai/overview
+Zaloguj się na konto użytkownika.</content><expected>Serwis powinien otworzyc menu glowne - podzielone na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported.
+</expected></step>
+<step>
+<index>2</index><content>Wybierz sekcje settings - zamieszczona w prawym g&amp;oacute;rnym rogu. Z pierwszą literą Twojego inicjału.
+</content><expected>Menu rozwija się. Widoczne są trzy podsekcje: Overview, Account, Getting Started, Log Out,
+</expected></step>
+<step>
+<index>3</index><content>Wybierz podsekcje settings.
+</content><expected>Serwis powinien przenieść Cię do wybranej opcji.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C22</id>
+				<title>PrawidłoweDziałaniePodsekcjiSubscription.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Użytkownik zalogowany z podstawowymi prawami API LANGAI: 
+
+Login: obronapracybartek@gmail.com      hasło: kod numeryczny wysłany na konto email. 
+
+
+Serwis uruchomiony na komputerze typu desktop. 
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Uruchom stronę: https://www.openlang.ai/overview
+Zaloguj się na konto użytkownika.
+</content><expected>Serwis powinien otworzyc menu glowne - podzielone na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported.
+</expected></step>
+<step>
+<index>2</index><content>Wybierz sekcje settings - zamieszczona w prawym g&amp;oacute;rnym rogu. Z pierwszą literą Twojego inicjału.
+</content><expected>Menu rozwija się. Widoczne są trzy podsekcje: Overview, Account, Getting Started, Log Out,
+</expected></step>
+<step>
+<index>3</index><content>Wybierz podsekcje Subscription </content><expected>Serwis powinien przenieść Cię do wybranej opcji.
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C23</id>
+				<title>PrawidłoweDziałaniePodsekcjiName.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Użytkownik zalogowany z podstawowymi prawami API LANGAI: 
+
+Login: obronapracybartek@gmail.com      hasło: kod numeryczny wysłany na konto email. 
+
+
+Serwis uruchomiony na komputerze typu desktop. 
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Uruchom stronę: https://www.openlang.ai/overview
+Zaloguj się na konto użytkownika.</content><expected>
+Zaloguj się na konto użytkownika.
+
+Serwis powinien otworzyc menu glowne - podzielone na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported.</expected></step>
+<step>
+<index>2</index><content>Wybierz sekcje settings - zamieszczona w prawym g&amp;oacute;rnym rogu. Z pierwszą literą Twojego inicjału.
+
+</content><expected>Menu rozwija się. Widoczne są trzy podsekcje: Overview, Account, Getting Started, Log Out,
+
+</expected></step>
+<step>
+<index>3</index><content>Wybierz podsekcje Name
+</content><expected>Serwis powinien przenieść Cię do wybranej opcji.
+
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C25</id>
+				<title>PrawidłoweDziałaniePodsekcjiGettingStarted.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Użytkownik zalogowany z podstawowymi prawami API LANGAI: 
+
+Login: obronapracybartek@gmail.com      hasło: kod numeryczny wysłany na konto email. 
+
+
+Serwis uruchomiony na komputerze typu desktop. 
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Uruchom stronę: https://www.openlang.ai/overview
+Zaloguj się na konto użytkownika.</content><expected>Serwis powinien otworzyc menu glowne - podzielone na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported.
+
+</expected></step>
+<step>
+<index>2</index><content>Wybierz sekcje settings - zamieszczona w prawym g&amp;oacute;rnym rogu. Z pierwszą literą Twojego inicjału.
+
+</content><expected>Menu rozwija się. Widoczne są trzy podsekcje: Overview, Account, Getting Started, Log Out,
+
+</expected></step>
+<step>
+<index>3</index><content>Wybierz podsekcje Subscription
+
+</content><expected>Serwis powinien przenieść Cię do wybranej opcji.
+
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C19</id>
+				<title>PrawidłoweDziałaniePodsekcjiZmianaJezykow</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Użytkownik zalogowany z podstawowymi prawami API LANGAI: 
+
+Login: obronapracybartek@gmail.com      hasło: kod numeryczny wysłany na konto email. 
+
+
+Serwis uruchomiony na komputerze typu desktop. 
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Uruchom stronę: https://www.openlang.ai/overview
+Zaloguj się na konto użytkownika.</content><expected>Serwis powinien otworzyc menu glowne - podzielone na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported.
+
+</expected></step>
+<step>
+<index>2</index><content>Wybierz sekcje English - zamieszczona w prawym g&amp;oacute;rnym rogu. 
+</content><expected>Menu rozwija się. Powinny być dostępne kolejne opcje językowe.
+</expected></step>
+<step>
+<index>3</index><content>Wybierz kolejną opcje językową według uznania.</content><expected>Serwis powinien dokonać zmiany języka na wybrany przez użytkownika. </expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C26</id>
+				<title>PrawidłoweDziałaniePodsekcjiLogOut</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Użytkownik zalogowany z podstawowymi prawami API LANGAI: 
+
+Login: obronapracybartek@gmail.com      hasło: kod numeryczny wysłany na konto email. 
+
+
+Serwis uruchomiony na komputerze typu desktop. 
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Uruchom stronę: https://www.openlang.ai/overview
+Zaloguj się na konto użytkownika.</content><expected>Serwis powinien otworzyc menu glowne - podzielone na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported.
+
+</expected></step>
+<step>
+<index>2</index><content>Wybierz sekcje settings - zamieszczona w prawym g&amp;oacute;rnym rogu. Z pierwszą literą Twojego inicjału.
+
+</content><expected>Menu rozwija się. Widoczne są trzy podsekcje: Overview, Account, Getting Started, Log Out,
+
+</expected></step>
+<step>
+<index>3</index><content>Wybierz opcje Log Out.
+
+</content><expected>Serwis powinien wylogować użytkownika. Powinna zostać wyświetlona strona gł&amp;oacute;wna. </expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>MenuSrodkowe</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C5</id>
+				<title>PrawidloweDzialanieMinutesPlayed</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Użytkownik zalogowany z podstawowymi prawami API LANGAI: 
+
+Login: obronapracybartek@gmail.com      hasło: kod numeryczny wysłany na konto email. 
+
+
+Serwis uruchomiony na komputerze typu desktop. 
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Uruchom stronę: https://www.openlang.ai/overview
+Zaloguj się na konto użytkownika.</content><expected>Serwis powinien otworzyc menu glowne - podzielone na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported.
+</expected></step>
+<step>
+<index>2</index><content>Wybierz dowolny podcast z zakładki Podcasts -&amp;amp;gt; trending. </content><expected>Wyświetla się lista kafelk&amp;oacute;w z dostępnymi podcastami. </expected></step>
+<step>
+<index>3</index><content>Wybierz dowolny odcinek podcastu. </content><expected>Powinna wyświetlić się strona oraz informacja &quot;Loading Transmition&quot;</expected></step>
+<step>
+<index>4</index><content>Kliknij czarny przycisk play na dole ekranu. </content><expected>Kliknięcie przycisku powoduje uruchomienie podcastu. Słowa powinny wyświetlać się na ekranie. </expected></step>
+<step>
+<index>5</index><content>W lewym g&amp;oacute;rnym rogu odznacz opcje &quot;Shadowing&quot;</content><expected>Opcja jest zaznaczona na szaro. Podcast jest odtwarzany w trybie ciągłym. </expected></step>
+<step>
+<index>6</index><content>Przesłuchaj podcast minimum minutę. </content><expected>Timer znajduje się w prawym g&amp;oacute;rnym rogu. </expected></step>
+<step>
+<index>7</index><content>Wybierając przycisk X a następnie ikonę rakiety wr&amp;oacute;ć na stronę gł&amp;oacute;wną. </content><expected>Wynik w zakładce minutes played powinien być dokładnie taki sam lub większy o czas przesłuchanej audycji. </expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C16</id>
+				<title>WyświetlanieZakładkiEmptyStateImported</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Użytkownik zalogowany z podstawowymi prawami API LANGAI: 
+
+Login: obronapracybartek@gmail.com      hasło: kod numeryczny wysłany na konto email. 
+
+
+Serwis uruchomiony na komputerze typu desktop. 
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Uruchom stronę: https://www.openlang.ai/overview
+Zaloguj się na konto użytkownika.</content><expected>Serwis powinien otworzyc menu glowne - podzielone na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported.</expected></step>
+<step>
+<index>2</index><content>Zweryfikuj sekcje &quot;Imported&quot;</content><expected>Wybrana podsekcja powinna wyświetlać informację: No imported content yet z ikoną pytajnika. </expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Menu &quot;Imported&quot;</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C8</id>
+				<title>WyslanieMailaFeedback</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Użytkownik zalogowany z podstawowymi prawami API LANGAI: 
+
+Login: obronapracybartek@gmail.com      hasło: kod numeryczny wysłany na konto email. 
+
+
+Serwis uruchomiony na komputerze typu desktop. 
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Uruchom stronę: https://www.openlang.ai/overview
+Zaloguj się na konto użytkownika.</content><expected>Serwis powinien otworzyc menu glowne - podzielone na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported. W prawym dolnym rogu powinna znajdować się ikona koperty. 
+</expected></step>
+<step>
+<index>2</index><content>Wybierz ikonę koperty klikając na nią. </content><expected>Powinno otworzyć się okno zatytułowane Feedback z polem tekstowym. </expected></step>
+<step>
+<index>3</index><content>Wypełnij pole tekstowe wpisując dowolny tekst z klawiatury. Kliknij send feedback. </content><expected>Okno powinno zniknąć. Powinna pojawić się informacja o wysłaniu wiadomości. </expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+	</sections>
+</suite>

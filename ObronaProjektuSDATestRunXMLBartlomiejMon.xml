@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<run>
+	<id>R3</id>
+	<name>Test Run 12/14/2023</name>
+	<description>W ramach tego Test Runu przeprowadzam serię testów eksploracyjnych na platformie OpenLang AI. Głównym celem jest zidentyfikowanie nieoczekiwanych zachowań oraz potencjalnych błędów w interfejsie użytkownika i funkcjonalnościach. Testy skupią się na interakcji z różnymi modułami aplikacji, według zaplanowanych przypadków testowych.</description>
+	<config></config>
+	<createdon>2023-12-14T23:19:46Z</createdon>
+		<completed>false</completed>
+		<milestone></milestone>
+	<stats>
+										<passed>
+			<percent>80</percent>
+			<count>4</count>
+		</passed>
+											<blocked>
+			<percent>0</percent>
+			<count>0</count>
+		</blocked>
+											<untested>
+			<percent>0</percent>
+			<count>0</count>
+		</untested>
+											<retest>
+			<percent>0</percent>
+			<count>0</count>
+		</retest>
+											<failed>
+			<percent>20</percent>
+			<count>1</count>
+		</failed>
+																																																				</stats>	<sections>
+		<section>
+		<name>Test Cases</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>MenuGornePodcastVideos</name>
+		<description></description>
+						<tests>
+						            																																																			<test>
+				<id>T4</id>
+				<title>PrawidloweDzialaniePodcasts</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>Użytkownik zalogowany z podstawowymi prawami API LANGAI: 
+
+Login: obronapracybartek@gmail.com      hasło: kod numeryczny wysłany na konto email. 
+
+
+Serwis uruchomiony na komputerze typu desktop. 
+
+
+ </preconds>
+															<steps_separated><step>
+<index>1</index><content>Uruchom stronę: https://www.openlang.ai/overview 
+Zaloguj się na konto użytkownika. </content><expected>Serwis powinien otworzyc menu glowne - podzielone na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported. </expected></step>
+<step>
+<index>2</index><content>Wybierz w lewym g&amp;oacute;rnym rogu opcje &amp;ldquo;Podcasts&amp;rdquo;. </content><expected>Pointer powinien się zmienić na buttonowy.</expected></step>
+<step>
+<index>3</index><content>Kliknij w przycisk &quot;Podcasts&quot;.</content><expected>Zostajemy przeniesieni do podstrony Podcast. Powinny znaleźć się tam dwie sekcje: Imported oraz Trending</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C1</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Bartek Bartek</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>75</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-12-14T23:26:40Z</createdon>
+																		<createdby>Bartek Bartek</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment>Test zakończony pozytywnie. Wszystko odbywa się zgodnie z instrukcją. </comment>
+																		<version></version>
+																														<elapsed>75</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Uruchom stronę: https://www.openlang.ai/overview 
+Zaloguj się na konto użytkownika. </content><expected>Serwis powinien otworzyc menu glowne - podzielone na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported. </expected><actual></actual><status>Untested</status></step>
+<step>
+<content>Wybierz w lewym g&amp;oacute;rnym rogu opcje &amp;ldquo;Podcasts&amp;rdquo;. </content><expected>Pointer powinien się zmienić na buttonowy.</expected><actual></actual><status>Untested</status></step>
+<step>
+<content>Kliknij w przycisk </content><expected>Zostajemy przeniesieni do podstrony Podcast. Powinny znaleźć się tam dwie sekcje: Imported oraz Trending</expected><actual></actual><status>Untested</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-12-14T23:19:46Z</createdon>
+																		<createdby>Bartek Bartek</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T5</id>
+				<title>PrawidloweDzialanieVideos</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>Użytkownik zalogowany z podstawowymi prawami API LANGAI: 
+
+Login: obronapracybartek@gmail.com      hasło: kod numeryczny wysłany na konto email. 
+
+
+Serwis uruchomiony na komputerze typu desktop. 
+</preconds>
+															<steps_separated><step>
+<index>1</index><content>Uruchom stronę: https://www.openlang.ai/overview. Zaloguj się na konto użytkownika. </content><expected>Serwis powinien otworzyc menu glowne - podzielonye na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported.
+</expected></step>
+<step>
+<index>2</index><content>Wybierz w lewym g&amp;oacute;rnym rogu opcje &amp;ldquo;Videos&amp;rdquo;.</content><expected> Pointer powinien się zmienić  na na buttonowy.</expected></step>
+<step>
+<index>3</index><content>Kliknij w przycisk &quot;Videos&quot;. </content><expected>Otwiera się link &amp;ldquo;Videos&amp;rdquo;. Zostajemy przeniesieni do podstrony Podcast. Powinny znaleźć się tam dwie sekcje. Imported oraz Trening. 
+
+ </expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C2</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Bartek Bartek</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>31</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-12-14T23:27:35Z</createdon>
+																		<createdby>Bartek Bartek</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment>Test zakończony pozytywnie, wszystko odbywa się zgodnie z instrukcją. </comment>
+																		<version></version>
+																														<elapsed>31</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Uruchom stronę: https://www.openlang.ai/overview. Zaloguj się na konto użytkownika. </content><expected>Serwis powinien otworzyc menu glowne - podzielonye na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported.
+</expected><actual></actual><status>Untested</status></step>
+<step>
+<content>Wybierz w lewym g&amp;oacute;rnym rogu opcje &amp;ldquo;Videos&amp;rdquo;.</content><expected> Pointer powinien się zmienić  na na buttonowy.</expected><actual></actual><status>Untested</status></step>
+<step>
+<content>Kliknij w przycisk </content><expected>Otwiera się link &amp;ldquo;Videos&amp;rdquo;. Zostajemy przeniesieni do podstrony Podcast. Powinny znaleźć się tam dwie sekcje. Imported oraz Trening. 
+
+ </expected><actual></actual><status>Untested</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-12-14T23:19:46Z</createdon>
+																		<createdby>Bartek Bartek</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+		<section>
+		<name>MenuGorneSettingsJezyki</name>
+		<description></description>
+						<tests>
+						            																																																			<test>
+				<id>T6</id>
+				<title>PrawidloweDzialanieSettings</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>Użytkownik zalogowany z podstawowymi prawami API LANGAI: 
+
+Login: obronapracybartek@gmail.com      hasło: kod numeryczny wysłany na konto email. 
+
+
+Serwis uruchomiony na komputerze typu desktop. 
+</preconds>
+															<steps_separated><step>
+<index>1</index><content>Uruchom stronę: https://www.openlang.ai/overview
+Zaloguj się na konto użytkownika.</content><expected>Serwis powinien otworzyc menu glowne - podzielone na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported.</expected></step>
+<step>
+<index>2</index><content>Wybierz sekcje settings - zamieszczona w prawym g&amp;oacute;rnym rogu. Z pierwszą literą Twojego inicjału. </content><expected>Menu rozwija się. Widoczne są trzy podsekcje: Overview, Account, Getting Started, Log Out, </expected></step>
+<step>
+<index>3</index><content>Wybierz jedną z sekcji - klikając. </content><expected>Serwis powinien przenieść Cię do wybranej opcji. </expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C4</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Bartek Bartek</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>53</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-12-14T23:29:18Z</createdon>
+																		<createdby>Bartek Bartek</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment>Wykonałem test, test przebiegł pozytywnie. Wybrałem jedną z podsekcji i zostałem przeniesiony zgodnie z wybraną tematyką. </comment>
+																		<version></version>
+																														<elapsed>53</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Uruchom stronę: https://www.openlang.ai/overview
+Zaloguj się na konto użytkownika.</content><expected>Serwis powinien otworzyc menu glowne - podzielone na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported.</expected><actual></actual><status>Untested</status></step>
+<step>
+<content>Wybierz sekcje settings - zamieszczona w prawym g&amp;oacute;rnym rogu. Z pierwszą literą Twojego inicjału. </content><expected>Menu rozwija się. Widoczne są trzy podsekcje: Overview, Account, Getting Started, Log Out, </expected><actual></actual><status>Untested</status></step>
+<step>
+<content>Wybierz jedną z sekcji - klikając. </content><expected>Serwis powinien przenieść Cię do wybranej opcji. </expected><actual></actual><status>Untested</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-12-14T23:19:46Z</createdon>
+																		<createdby>Bartek Bartek</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+		<section>
+		<name>MenuSrodkowe</name>
+		<description></description>
+						<tests>
+						            																																																			<test>
+				<id>T7</id>
+				<title>PrawidloweDzialanieMinutesPlayed</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>Użytkownik zalogowany z podstawowymi prawami API LANGAI: 
+
+Login: obronapracybartek@gmail.com      hasło: kod numeryczny wysłany na konto email. 
+
+
+Serwis uruchomiony na komputerze typu desktop. 
+</preconds>
+															<steps_separated><step>
+<index>1</index><content>Uruchom stronę: https://www.openlang.ai/overview
+Zaloguj się na konto użytkownika.</content><expected>Serwis powinien otworzyc menu glowne - podzielone na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported.
+</expected></step>
+<step>
+<index>2</index><content>Wybierz dowolny podcast z zakładki Podcasts -&amp;amp;gt; trending. </content><expected>Wyświetla się lista kafelk&amp;oacute;w z dostępnymi podcastami. </expected></step>
+<step>
+<index>3</index><content>Wybierz dowolny odcinek podcastu. </content><expected>Powinna wyświetlić się strona oraz informacja &quot;Loading Transmition&quot;</expected></step>
+<step>
+<index>4</index><content>Kliknij czarny przycisk play na dole ekranu. </content><expected>Kliknięcie przycisku powoduje uruchomienie podcastu. Słowa powinny wyświetlać się na ekranie. </expected></step>
+<step>
+<index>5</index><content>W lewym g&amp;oacute;rnym rogu odznacz opcje &quot;Shadowing&quot;</content><expected>Opcja jest zaznaczona na szaro. Podcast jest odtwarzany w trybie ciągłym. </expected></step>
+<step>
+<index>6</index><content>Przesłuchaj podcast minimum minutę. </content><expected>Timer znajduje się w prawym g&amp;oacute;rnym rogu. </expected></step>
+<step>
+<index>7</index><content>Wybierając przycisk X a następnie ikonę rakiety wr&amp;oacute;ć na stronę gł&amp;oacute;wną. </content><expected>Wynik w zakładce minutes played powinien być dokładnie taki sam lub większy o czas przesłuchanej audycji. </expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C5</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Bartek Bartek</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>62</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-12-14T23:35:28Z</createdon>
+																		<createdby>Bartek Bartek</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment>Test wykonany zgodnie z założeniami. Test zdany. Dodatkowo dodaje zrzut ekranu jako potwierdzenie.  ![](index.php?/attachments/get/f708c6dd-6966-4ab5-a087-afe99b45c958) </comment>
+																		<version></version>
+																														<elapsed>62</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Uruchom stronę: https://www.openlang.ai/overview
+Zaloguj się na konto użytkownika.</content><expected>Serwis powinien otworzyc menu glowne - podzielone na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported.
+</expected><actual></actual><status>Untested</status></step>
+<step>
+<content>Wybierz dowolny podcast z zakładki Podcasts -&amp;gt; trending. </content><expected>Wyświetla się lista kafelk&amp;oacute;w z dostępnymi podcastami. </expected><actual></actual><status>Untested</status></step>
+<step>
+<content>Wybierz dowolny odcinek podcastu. </content><expected>Powinna wyświetlić się strona oraz informacja </expected><actual></actual><status>Untested</status></step>
+<step>
+<content>Kliknij czarny przycisk play na dole ekranu. </content><expected>Kliknięcie przycisku powoduje uruchomienie podcastu. Słowa powinny wyświetlać się na ekranie. </expected><actual></actual><status>Untested</status></step>
+<step>
+<content>W lewym g&amp;oacute;rnym rogu odznacz opcje </content><expected>Opcja jest zaznaczona na szaro. Podcast jest odtwarzany w trybie ciągłym. </expected><actual></actual><status>Untested</status></step>
+<step>
+<content>Przesłuchaj podcast minimum minutę. </content><expected>Timer znajduje się w prawym g&amp;oacute;rnym rogu. </expected><actual></actual><status>Untested</status></step>
+<step>
+<content>Wybierając przycisk X a następnie ikonę rakiety wr&amp;oacute;ć na stronę gł&amp;oacute;wną. </content><expected>Wynik w zakładce minutes played powinien być dokładnie taki sam lub większy o czas przesłuchanej audycji. </expected><actual></actual><status>Untested</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-12-14T23:19:46Z</createdon>
+																		<createdby>Bartek Bartek</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+		<section>
+		<name>Menu &quot;Imported&quot;</name>
+		<description></description>
+						<tests>
+						            																																																			<test>
+				<id>T8</id>
+				<title>WyslanieMailaFeedback</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>Użytkownik zalogowany z podstawowymi prawami API LANGAI: 
+
+Login: obronapracybartek@gmail.com      hasło: kod numeryczny wysłany na konto email. 
+
+
+Serwis uruchomiony na komputerze typu desktop. 
+</preconds>
+															<steps_separated><step>
+<index>1</index><content>Uruchom stronę: https://www.openlang.ai/overview
+Zaloguj się na konto użytkownika.</content><expected>Serwis powinien otworzyc menu glowne - podzielone na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported. W prawym dolnym rogu powinna znajdować się ikona koperty. 
+</expected></step>
+<step>
+<index>2</index><content>Wybierz ikonę koperty klikając na nią. </content><expected>Powinno otworzyć się okno zatytułowane Feedback z polem tekstowym. </expected></step>
+<step>
+<index>3</index><content>Wypełnij pole tekstowe wpisując dowolny tekst z klawiatury. Kliknij send feedback. </content><expected>Okno powinno zniknąć. Powinna pojawić się informacja o wysłaniu wiadomości. </expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C8</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Failed</status>
+																<assignedto>Bartek Bartek</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>331</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2023-12-14T23:41:43Z</createdon>
+																		<createdby>Bartek Bartek</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment>Nie wyświetla się, żaden komunikat o wysłanej wiadomości. Nie możemy być więc pewni iż ostatecznie wiadomość została wysłana. Dodatkowo w oknie można wpisać dowolną liczbę znaków co niesie ze sobą różnego rodzaju ryzyka - min związane z wydajnością oraz bezpieczeństwem użytkowników. </comment>
+																		<version></version>
+																														<elapsed>331</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Uruchom stronę: https://www.openlang.ai/overview
+Zaloguj się na konto użytkownika.</content><expected>Serwis powinien otworzyc menu glowne - podzielone na trzy czesci: sekcje g&amp;oacute;rną, progress today oraz sekcje imported. W prawym dolnym rogu powinna znajdować się ikona koperty. 
+</expected><actual></actual><status>Untested</status></step>
+<step>
+<content>Wybierz ikonę koperty klikając na nią. </content><expected>Powinno otworzyć się okno zatytułowane Feedback z polem tekstowym. </expected><actual></actual><status>Untested</status></step>
+<step>
+<content>Wypełnij pole tekstowe wpisując dowolny tekst z klawiatury. Kliknij send feedback. </content><expected>Okno powinno zniknąć. Powinna pojawić się informacja o wysłaniu wiadomości. </expected><actual></actual><status>Untested</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-12-14T23:19:47Z</createdon>
+																		<createdby>Bartek Bartek</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+</sections>
+			</section>
+</sections>
+</run>
